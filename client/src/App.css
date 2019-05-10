@@ -1,0 +1,22 @@
+.App{
+  width:100%;
+}
+#game-board{
+  cursor:pointer;
+  width:100%;
+  max-width:600px;
+}
+.draw{
+  cursor:default;
+  stroke:black;
+  stroke-width:3;
+  animation: dash .2s ease-in 1 forwards;
+  transform:scale(0);
+  transform-origin: center;
+}
+
+@keyframes dash {
+  to {
+    transform:scale(1);
+  }
+}
